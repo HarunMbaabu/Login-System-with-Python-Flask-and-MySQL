@@ -2,10 +2,10 @@
 
 ### Requirements
 
-<P> - Download and install Python, for this tutorial I'll be using Python 3.7.2, make sure to check the box Add Python to PATH on the installation setup screen. </p>
+<P> - Download and install Python, I am using  be using Python 3.7.2, make sure to check the box Add Python to PATH on the installation setup screen. </p>
 <p> - Download and install MySQL Community Server and MySQL Workbench, you can skip this step if you already have a MySQL server set up. </p>
-<p> - Install Python Flask with the command: pip install flask</p> 
-<p> - Install Flask-MySQLdb with the command: pip install flask-mysqldb </p>
+<p> - Install Python Flask with the command:<code>  pip install flask </code> </p> 
+<p> - Install Flask-MySQLdb with the command: <code> pip install flask-mysqldb </code> </p>
 
 <b> <center> Mojor operations handled.  </center> </b>
 <p style="text-align:justify;">
