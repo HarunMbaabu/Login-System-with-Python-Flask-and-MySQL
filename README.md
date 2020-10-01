@@ -1,8 +1,8 @@
 ## Login System with Python Flask and MySQL for Beginners
 
-### Requirements
+### Requirements(Minimum)
 
-<P> - Download and install Python, I am using  be using Python 3.7.2, make sure to check the box Add Python to PATH on the installation setup screen. </p>
+<P> - Download and install Python, I am using Python 3.7.2, make sure to check the box Add Python to PATH on the installation setup screen. </p>
 <p> - Download and install MySQL Community Server and MySQL Workbench, you can skip this step if you already have a MySQL server set up. </p>
 <p> - Install Python Flask with the command:<code>  pip install flask </code> </p> 
 <p> - Install Flask-MySQLdb with the command: <code> pip install flask-mysqldb </code> </p>
@@ -26,3 +26,4 @@ Install Flask-MySQLdb with the command: pip install flask-mysqldb.<br>
           
 
 ![Image description](https://github.com/HarunHM/Login-System-with-Python-Flask-and-MySQL/blob/master/static/Screenshot%20from%202020-01-11%2020-25-25.png?raw=true)
+Note:-The version of python i use will change in future , so check your python IDE with latest version and if this doesn't work comment me down.
