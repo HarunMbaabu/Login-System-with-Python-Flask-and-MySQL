@@ -5,7 +5,7 @@
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
 }
-body {
+body , #auth{
   	background-color: #435165;
   	margin: 0;
 }
