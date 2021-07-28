@@ -21,15 +21,20 @@ Download and install Python, for this tutorial I'll be using Python 3.7.2, make 
 ### Installation
           
 Navigate to your current project directory for this case it will be **Login-System-with-Python-Flask-and-MySQL**. <br>
+
+### 1 .Clone the repository into your local machine
+```
+git clone https://github.com/{your-Github-Username }/Login-System-with-Python-Flask-and-MySQL.git
+```
           
-### 1 .Create an environment
-          
+### 2 .Create an environment
+> Check to make sure you are in the same directory where you did the git clone,if not navigate to that specific directory.
+
 Depending on your operating system,make a virtual environment to avoid messing with your machine's primary dependencies
           
 **Windows**
           
 ```
-
 cd Login-System-with-Python-Flask-and-MySQL
 py -3 -m venv venv
 
@@ -43,7 +48,7 @@ python3 -m venv venv
 
 ```
 
-### 2 .Activate the environment
+### 3 .Activate the environment
           
 **Windows** 
 
@@ -55,13 +60,13 @@ python3 -m venv venv
 or
 ```source venv/bin/activate```
 
-### 3 .Install the requirements
+### 4 .Install the requirements
 
 Applies for windows/macOS/Linux
 
 ```pip install -r requirements.txt```
   
-### 4. Run the application 
+### 5. Run the application 
 
 **For linux and macOS**
 Make the run file executable by running the code
