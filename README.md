@@ -81,4 +81,4 @@ flask run
           
 
 ![Image description](https://github.com/HarunHM/Login-System-with-Python-Flask-and-MySQL/blob/master/static/Screenshot%20from%202020-01-11%2020-25-25.png?raw=true)
-Note:-The version of python i use will change in future , so check your python IDE with latest version and if this doesn't work comment me down.
+Note:-The version of python i use will change in future , so check your python IDE with latest version and if this doesn't work get in touch with me on twitter, https://twitter.com/HarunMbaabu.
