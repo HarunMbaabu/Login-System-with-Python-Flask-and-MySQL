@@ -6,7 +6,7 @@ Download and install Python, I am using Python 3.7.2, make sure to check the box
 Download and install MySQL Community Server and MySQL Workbench, you can skip this step if you already have a MySQL server set up. </p>
 
 
-**Mojor operations handled**
+**Major operations handled**
 
 1). Form Design — Design a login and registration form with HTML5 and CSS3.<br>
 2). Templates — Create Flask templates with HTML and Python.<br>
