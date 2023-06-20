@@ -22,7 +22,7 @@ Download and install Python, for this tutorial I'll be using Python 3.7.2, make 
 Navigate to your current project directory for this case it will be **Login-System-with-Python-Flask-and-MySQL**. <br>
 
 ### 1 .Fork the repository and Clone it into your local machine
-```
+```csharp
 git clone https://github.com/{your-Github-Username }/Login-System-with-Python-Flask-and-MySQL.git
 ```
           
@@ -33,7 +33,7 @@ Depending on your operating system,make a virtual environment to avoid messing w
           
 **Windows**
           
-```
+```csharp
 cd Login-System-with-Python-Flask-and-MySQL
 py -3 -m venv venv
 
@@ -41,7 +41,7 @@ py -3 -m venv venv
           
 **macOS/Linux**
           
-```
+```csharp
 cd Login-System-with-Python-Flask-and-MySQL
 python3 -m venv venv
 
@@ -63,9 +63,32 @@ or
 
 Applies for windows/macOS/Linux
 
-```pip install -r requirements.txt```
-  
-### 5. Run the application 
+```csharp
+pip install -r requirements.txt
+```
+
+
+### 6. Create the database and table 
+
+```sql
+-- Create the  database named "loginapp"
+CREATE DATABASE loginapp;
+
+
+-- Switch to 'loginapp' database; 
+USE loginapp; 
+
+
+-- Create 'account' table with id, username,email, password columns. 
+CREATE TABLE accounts (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  username VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL
+); 
+```
+
+### 6. Run the application 
 
 **For linux and macOS**
 Make the run file executable by running the code

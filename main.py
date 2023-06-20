@@ -4,17 +4,17 @@ import MySQLdb.cursors
 import re
 
 
-
 app = Flask(__name__)
 
 # Change this to your secret key (can be anything, it's for extra protection)
-app.secret_key = '1a2b3c4d5e'
+app.secret_key = '1a2b3c4d5e6d7g8h9i10'
 
 # Enter your database connection details below
 app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = '*****'
-app.config['MYSQL_PASSWORD'] = '*****'
-app.config['MYSQL_DB'] = '****'
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = '33812040'
+app.config['MYSQL_DB'] = 'loginapp'
+
 
 # Intialize MySQL
 mysql = MySQL(app)
@@ -47,8 +47,7 @@ def login():
     return render_template('auth/login.html',title="Login")
 
 
-
-# http://localhost:5000/pythinlogin/register 
+# http://localhost:5000/pythonlogin/register 
 # This will be the registration page, we need to use both GET and POST requests
 @app.route('/pythonlogin/register', methods=['GET', 'POST'])
 def register():
@@ -88,7 +87,7 @@ def register():
 # http://localhost:5000/pythinlogin/home 
 # This will be the home page, only accessible for loggedin users
 
-@app.route('/pythonlogin/home')
+@app.route('/')
 def home():
     # Check if user is loggedin
     if 'loggedin' in session:
@@ -98,7 +97,7 @@ def home():
     return redirect(url_for('login'))    
 
 
-@app.route('/pythonlogin/profile')
+@app.route('/profile')
 def profile():
     # Check if user is loggedin
     if 'loggedin' in session:
@@ -108,4 +107,4 @@ def profile():
     return redirect(url_for('login'))  
 
 if __name__ =='__main__':
-	app.run(Debug=True)
+	app.run(debug=True)
