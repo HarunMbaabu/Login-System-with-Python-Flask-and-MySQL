@@ -12,12 +12,13 @@ app.secret_key = '1a2b3c4d5e6d7g8h9i10'
 # Enter your database connection details below
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = '33812040'
+app.config['MYSQL_PASSWORD'] = '*******' #Replace ******* with  your database password.
 app.config['MYSQL_DB'] = 'loginapp'
 
 
 # Intialize MySQL
 mysql = MySQL(app)
+
 
 # http://localhost:5000/pythonlogin/ - this will be the login page, we need to use both GET and POST requests
 @app.route('/pythonlogin/', methods=['GET', 'POST'])
