@@ -54,4 +54,8 @@ class FlaskAppTestCase(unittest.TestCase):
             # Perform a GET request to the profile endpoint after logging in
             response = client.get('/profile')
             self.assertEqual(response.status_code, 200)  # expect a successful response
-            self.assertIn(b'Profile Page', response
+            self.assertIn(b'Profile Page', response.data)  # expect 'Profile Page' to be in the response content
+
+
+if __name__ == '__main__':
+    unittest.main()

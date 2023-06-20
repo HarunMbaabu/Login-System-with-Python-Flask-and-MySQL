@@ -2,6 +2,10 @@
 
 >>  **When you make contributions please test your code before sending a PR.** 
 
+```python 
+>>> python unit_test.py
+```
+
 ### Requirements(Minimum)
 
 Download and install Python, I am using Python 3.7.2, make sure to check the box Add Python to PATH on the installation setup screen. </p>
