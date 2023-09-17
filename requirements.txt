@@ -6,3 +6,5 @@ Jinja2==3.0.1
 MarkupSafe==2.0.1
 mysqlclient==2.0.3
 Werkzeug==2.2.3
+
+
