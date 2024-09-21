@@ -1,0 +1,28 @@
+version: '3'
+services:
+  web:
+    image: multi
+    ports:
+      - "5000:5000"
+  nginx:
+    image: nginx
+    ports:
+      - "80:80"
+  db:
+    image: mysql:8.4
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'loginapp'
+      # So you don't have to use root, but you can if you like
+      MYSQL_USER: 'admin'
+      # You can use whatever password you like
+      MYSQL_PASSWORD: 'Devops@1234'
+      # Password for root access
+      MYSQL_ROOT_PASSWORD: 'Devops@1234'
+    ports:
+      # <Port exposed> : <MySQL Port running inside container>
+      - '3300:3306'
+    expose:
+      # Opens port 3306 on the container
+      - '3306'
+
