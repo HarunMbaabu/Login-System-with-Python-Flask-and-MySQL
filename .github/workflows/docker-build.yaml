@@ -15,4 +15,5 @@ jobs:
         with:
           docker: 'latest' 
       - run: |
-              docker --version
+              docker build -t my-image -f multistageDockerfile .
+              docker images
