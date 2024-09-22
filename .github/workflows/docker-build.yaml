@@ -1,0 +1,22 @@
+name: CI Pipeline for Building the Docker Image
+# github actions event
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build:
+  name: build_job
+    runs-on: my-ubuntu
+    steps:
+      run: |
+          Hello!!
+          echo "This is my first pipeline step"
+  test:
+    runs-on: my-ubuntu
+    steps:
+      run: echo "This is my test pipeline step"
+    
+
+
