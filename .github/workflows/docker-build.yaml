@@ -6,17 +6,17 @@ on:
       - dev
 
 jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is my first step!!"
   build:
-  name: build_job
-    runs-on: my-ubuntu
+    needs: setup
+    runs-on: ubuntu-latest
     steps:
-      run: |
-          Hello!!
-          echo "This is my first pipeline step"
+      - run: echo "Lets build the image"
   test:
-    runs-on: my-ubuntu
+    needs: build
+    runs-on: ubuntu-latest
     steps:
-      run: echo "This is my test pipeline step"
-    
-
-
+      - run: echo "lets test the image"
