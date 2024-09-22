@@ -15,5 +15,8 @@ jobs:
         with:
           docker: 'latest' 
       - run: |
-              docker build -t my-image -f multistageDockerfile .
-              docker images
+              aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 058264184834.dkr.ecr.us-west-2.amazonaws.com
+              docker build -t flask-app -f multistageDockerfile .
+              docker tag flask-app:latest 058264184834.dkr.ecr.us-west-2.amazonaws.com/flask-app:latest
+              docker push 058264184834.dkr.ecr.us-west-2.amazonaws.com/flask-app:latest
+
