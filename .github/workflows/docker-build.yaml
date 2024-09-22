@@ -15,8 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Lets build the image"
-  test:
-    needs: build
-    runs-on: my-ubuntu
-    steps:
-      - run: echo "lets test the image"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.8' 
+      - run: |
+          pip install -r requirements.txt
+          FLASK_APP=main.py FLASK_DEBUG=1 FLASK_ENV=development flask run
