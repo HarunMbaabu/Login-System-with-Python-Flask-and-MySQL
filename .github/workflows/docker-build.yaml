@@ -1,0 +1,22 @@
+name: CI Pipeline for Building the Docker Image
+# github actions event
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build:
+    runs-on: my-ubuntu
+    steps:
+      - run: echo "Lets build the image"
+      - uses: actions/checkout@v4
+      - uses:  actions/hello-world-docker-action@main
+        with:
+          docker: 'latest' 
+      - run: |
+              aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 058264184834.dkr.ecr.us-west-2.amazonaws.com
+              docker build -t flask-app -f multistageDockerfile .
+              docker tag flask-app:latest 058264184834.dkr.ecr.us-west-2.amazonaws.com/flask-app:latest
+              docker push 058264184834.dkr.ecr.us-west-2.amazonaws.com/flask-app:latest
+
