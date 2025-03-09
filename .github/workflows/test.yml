@@ -1,0 +1,32 @@
+name: CI/CD Pipeline
+
+# Triggers for the workflow
+on:
+  push:
+    branches: ci-cd
+  pull_request:
+    branches: [ "main" ]
+
+# Jobs to be executed
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Deployment
+      run: |
+        echo "Deploying the application"
+        
