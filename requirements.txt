@@ -7,4 +7,4 @@ MarkupSafe>=2.0
 mysqlclient==2.0.3
 Werkzeug==3.0.6
 python-dotenv==1.0.0
-gunicorn==21.2.0
+gunicorn==23.0.0
