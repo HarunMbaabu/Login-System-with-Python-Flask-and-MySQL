@@ -5,6 +5,6 @@ itsdangerous>=2.1.2
 Jinja2==3.1.5
 MarkupSafe>=2.0
 mysqlclient==2.0.3
-Werkzeug==3.0.6
+Werkzeug==3.1.4
 python-dotenv==1.0.0
 gunicorn==23.0.0
